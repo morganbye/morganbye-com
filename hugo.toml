@@ -9,7 +9,7 @@ copyright="CC BY-SA 4.0"
 
 [module]
   [[module.imports]]
-    path = 'github.com/dillonzq/LoveIt'
+    path = 'loveit'
 
 [menu]
   [[menu.main]]
@@ -18,7 +18,7 @@ copyright="CC BY-SA 4.0"
     weight = 10
   [[menu.main]]
     name = 'Blog'
-    pageRef = '/blog'
+    pageRef = 'https://morganbye.com/categories/blog/'
     weight = 20
   [[menu.main]]
     name = 'Tech lead'

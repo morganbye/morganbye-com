@@ -1,0 +1,39 @@
+name: Deploy on push
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+
+      # SETUP
+      # =====
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # BUILD
+      # =====
+      - name: Build static files
+        env:
+          TZ: 'America/Toronto'
+        run: hugo --minify
+
+      # DEPLOY
+      # ======
+      - name: Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USR }}
+          password: ${{ secrets.DEPLOY_PWD }}
+          local-dir: public/
+          server-dir: public_html/
