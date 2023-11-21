@@ -18,7 +18,7 @@ copyright="CC BY-SA 4.0"
     weight = 10
   [[menu.main]]
     name = 'Blog'
-    pageRef = 'https://morganbye.com/categories/blog/'
+    pageRef = '/blog'
     weight = 20
   [[menu.main]]
     name = 'Tech lead'
