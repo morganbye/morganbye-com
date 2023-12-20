@@ -1,10 +1,13 @@
 baseURL = 'http://morganbye.com/'
-languageCode = 'en-ca'
 title = 'Bringing AI in the real world'
+copyright = 'CC BY-SA 4.0'
+
+defaultContentLanguage = 'en'
+languageCode = 'en-ca'
+languageName = 'English'
+
 theme = 'LoveIt'
-
-copyright="CC BY-SA 4.0"
-
+summaryLength = 70
 # sectionPagesMenu = 'main'
 
 [module]
@@ -18,15 +21,15 @@ copyright="CC BY-SA 4.0"
     weight = 10
   [[menu.main]]
     name = 'Blog'
-    pageRef = '/blog'
+    pageRef = '/categories/blog/'
     weight = 20
   [[menu.main]]
     name = 'Tech lead'
-    pageRef = '/tech'
+    pageRef = '/categories/tech/'
     weight = 30
   [[menu.main]]
     name = 'Science'
-    pageRef = '/science'
+    pageRef = 'categories/science/'
     weight = 40
   [[menu.main]]
     name = 'About'
@@ -79,14 +82,14 @@ copyright="CC BY-SA 4.0"
   # Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
-    paginate = 20
+    paginate = 25
     # date format (month and day)
     dateFormat = "01-02"
     rss = 10
 
   # List (category or tag) page config
   [params.list]
-    paginate = 20
+    paginate = 25
     # date format (month and day)
     dateFormat = "01-02"
     rss = 10
