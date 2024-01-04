@@ -27,10 +27,16 @@ summaryLength = 70
     name = 'Tech lead'
     pageRef = '/categories/tech/'
     weight = 30
+  # This should become a PhD articles piece
   [[menu.main]]
     name = 'Science'
     pageRef = 'categories/science/'
     weight = 40
+  # Move under a science subheading
+  [[menu.main]]
+    name = 'EPR toolbox'
+    pageRef = 'categories/eprtoolbox/'
+    weight = 41
   [[menu.main]]
     name = 'About'
     pageRef = '/about.html'
