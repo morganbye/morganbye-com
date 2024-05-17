@@ -160,7 +160,7 @@ image_url = "https://morganbye.com/assets/icons/mda.png"
 
 [params.featured]
 enable = false
-featured_title = "Selected Work"
+featured_title = "Best of the blog"
 
 
 #-------------------------------
