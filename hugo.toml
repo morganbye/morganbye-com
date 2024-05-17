@@ -215,16 +215,20 @@ faq_intro = "Need some answers?"
 faq_title = "Frequently asked questions"
 
 [[params.faq_item]]
+title = "What distinguishes you from other developers?"
+description = "I've built data pipelines across 3 continents at petabyte scales, for over 15 years. But the data doesn't matter if we don't solve the human problems first - an AI solution that nobody uses is worthless."
+
+[[params.faq_item]]
 title = "Are the robots going to kill us all?"
-description = ""
+description = "Not any time soon. At least not in the way that you've got imagined thanks to the Terminator movies. Sure somebody with a DARPA grant is always going to strap a knife/gun/flamethrower on the side of a robot - but just like in Dr.Who - right now, that robot will struggle to even get out of the room, let alone up some stairs."
 
 [[params.faq_item]]
 title = "But AI is going to steal my job, right?"
-description = ""
+description = "A year ago, the whole world was convinced that AI was going to steal their job. Now, the reality is that most people are thinking 'I wish this POC at work would go a bit faster to scan these PDFs'."
 
 [[params.faq_item]]
-title = "When am I going to get my self driving car?"
-description = ""
+title = "When am I going to get my self-driving car?"
+description = "Humans are complicated. If we invented driving today - there's NO WAY IN HELL we'd let humans do it. They get distracted. They text their friends. They drink. They make mistakes. But the reality is, all of our streets, cities (and even legal systems) have been built around these limitations. It would be surprisingly easy to build self-driving cars if there were no humans on the road. But today no one wants to take liability. If a self-driving company kills someone, who's responsible? The manufacturer? The insurance company? The software developer?"
 
 
 #-------------------------------
