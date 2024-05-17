@@ -15,10 +15,17 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Checkout code
+      - name: Checkout base
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      - name: Checkout theme
+        uses: actions/checkout@v4
+        with:
+          repository: morganbye/morganbye-com_theme
+          token: ${{ secrets.GH_TOKEN_THEME }}
+          path: 'themes/morganbye-com_theme'
 
       # BUILD
       # =====

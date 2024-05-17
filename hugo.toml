@@ -1,384 +1,337 @@
-baseURL = 'http://morganbye.com/'
+baseURL = 'https://morganbye.com/'
 title = 'Bringing AI in the real world'
 copyright = 'CC BY-SA 4.0'
-
-defaultContentLanguage = 'en'
 languageCode = 'en-ca'
+defaultContentLanguage = 'en'
 languageName = 'English'
+theme = 'morganbye-com_theme'
+paginate = 9
+enableRobotsTXT = true
 
-theme = 'LoveIt'
-summaryLength = 70
-# sectionPagesMenu = 'main'
 
-[module]
-  [[module.imports]]
-    path = 'loveit'
+#-------------------------------
+# Menus
+#-------------------------------
 
+# Main Menu
 [menu]
-  [[menu.main]]
-    name = 'Home'
-    pageRef = '/'
-    weight = 10
-  [[menu.main]]
-    name = 'Blog'
-    pageRef = '/categories/blog/'
-    weight = 20
-  [[menu.main]]
-    name = 'Tech lead'
-    pageRef = '/categories/tech/'
-    weight = 30
-  # This should become a PhD articles piece
-  [[menu.main]]
-    name = 'Science'
-    pageRef = 'categories/science/'
-    weight = 40
-  # Move under a science subheading
-  [[menu.main]]
-    name = 'EPR toolbox'
-    pageRef = 'categories/eprtoolbox/'
-    weight = 41
-  [[menu.main]]
-    name = 'About'
-    pageRef = '/about.html'
-    weight = 50
+
+[[menu.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menu.main]]
+name = 'Blog'
+pageRef = '/posts/'
+weight = 20
+
+[[menu.main]]
+name = 'Tech lead'
+pageRef = '/tech/'
+weight = 30
+
+[[menu.main]]
+name = 'Science'
+pageRef = '/science/'
+weight = 40
+hasChildren = true
+[[menu.main]]
+parent = 'Science'
+name = 'Essays'
+pageRef = '/tags/science/'
+weight = 41
+[[menu.main]]
+parent = 'Science'
+name = 'EPR toolbox'
+pageRef = '/tags/eprtoolbox/'
+weight = 42
+
+[[menu.main]]
+name = 'About'
+pageRef = '/about.html'
+weight = 50
+
+
+# Footer Menu
+[[menu.footer]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.footer]]
+name = "Projects"
+url = "/projects/"
+weight = 2
+
+[[menu.footer]]
+name = "Posts"
+url = "/posts/"
+weight = 3
+
+[[menu.footer]]
+name = "About Me"
+url = "/about/"
+weight = 4
+
+
+#-------------------------------
+# Call to action button
+#-------------------------------
+
+[params.cta_button]
+enable = true
+cta_button_link = "/contact/"
+cta_button_text = "Get in touch"
+
+
+#-------------------------------
+# Logo and theme
+#-------------------------------
 
 [params]
-  # site default theme ["auto", "light", "dark"]
-  defaultTheme = "auto"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = ""
-  # which hash function used for SRI, when empty, no SRI is used
-  # ["sha256", "sha384", "sha512", "md5"]
-  fingerprint = ""
-  # date format
-  dateFormat = "2006-01-02"
-  # website title for Open Graph and Twitter Cards
-  title = "MorganBye.com - bringing AI into the real world"
-  # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Thoughts and musings from Morgan Bye"
-  # website images for Open Graph and Twitter Cards
-  images = []
+logo = "assets/img/logos/morgan_trans.png"
+logo_dark = "assets/img/logos/morgan_white.png"
+description = "MORGAN BYE"
+color_scheme = "auto" # auto, light, dark
 
-  [params.header]
-    # desktop header mode ["fixed", "normal", "auto"]
-    desktopMode = "fixed"
-    # mobile header mode ["fixed", "normal", "auto"]
-    mobileMode = "auto"
-    [params.header.title]
-      # URL of the LOGO
-      logo = "https://morganbye.com/uploads/2023/01/charcoal-300x226.png"
-      # title name
-      name = "Morgan Bye  - AI in the real world"
-      # you can add extra information to the name (HTML format is supported), such as icons
-      pre = ""
-      post = ""
-      # whether to use typeit animation for title name
-      typeit = false
 
-  [params.footer]
-    enable = true
-    # Custom content (HTML format is supported)
-    custom = ""
-    hugo = false
-    copyright = true
-    author = true
-    since = 2006
-    license= "CC BY-SA 4.0"
+#-------------------------------
+# Author
+#-------------------------------
 
-  # Section (all posts) page config
-  [params.section]
-    # special amount of posts in each section page
-    paginate = 25
-    # date format (month and day)
-    dateFormat = "01-02"
-    rss = 10
+[params.author]
+author_name = "Morgan Bye"
+author_avatar = "https://pbs.twimg.com/profile_images/1388207423702372354/KutsB7sU_400x400.jpg"
 
-  # List (category or tag) page config
-  [params.list]
-    paginate = 25
-    # date format (month and day)
-    dateFormat = "01-02"
-    rss = 10
 
-  # App icon config
-  [params.app]
-    # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "MorganBye.com"
-    # whether to omit favicon resource links
-    noFavicon = false
-    # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
-    # Android browser theme color
-    themeColor = "#ffffff"
-    # Safari mask icon color
-    iconColor = "#5bbad5"
-    # Windows v8-11 tile color
-    tileColor = "#da532c"
+#-------------------------------
+# Hero Settings
+#-------------------------------
 
-  [params.search]
-    enable = false
-    # type of search engine ["lunr", "algolia"]
-    type = "lunr"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    maxResultLength = 10
-    snippetLength = 30
-    # HTML tag name of the highlight part in results
-    highlightTag = "em"
-    # whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    # [params.search.algolia]
-    #   index = ""
-    #   appID = ""
-    #   searchKey = ""
+[params.hero]
+enable = true
+hero_title = "Bringing AI into the real world..."
+hero_description = "Leveraging my expertise, I'm here to collaborate with you on bringing custom AI solutuions into the real world. Together, let's optimize this planet!"
 
-  [params.home]
-    # amount of RSS pages
-    rss = 10
+[params.hero_logos]
+enable = true
 
-    [params.home.profile]
-      enable = true
-      # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
-      # URL of avatar shown in home page
-      avatarURL = "https://pbs.twimg.com/profile_images/1388207423702372354/KutsB7sU_400x400.jpg"
-      # title shown in home page (HTML format is supported)
-      title = "Morgan H. Bye, PhD"
-      # subtitle shown in home page (HTML format is supported)
-      subtitle = "Bringing AI into the real world"
-      # whether to use typeit animation for subtitle
-      typeit = true
-      # whether to show social links
-      social = true
-      # disclaimer (HTML format is supported)
-      disclaimer = ""
-    # Home page posts
-    [params.home.posts]
-      enable = true
-      # special amount of posts in each home posts page
-      paginate = 6
+[[params.hero_logo_image]]
+image_alt = "Boeing Logo"
+image_url = "https://morganbye.com/assets/icons/boeing.png"
 
-  # Social config in home page
-  [params.social]
-    GitHub = "morganbye"
-    Linkedin = "morganbye"
-    Twitter = "morganbye"
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = "morganbye"
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = "morganbye"
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = "28881016"
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki= ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe= ""
-    Email = "hello@morganbye.com"
-    Phone = ""
-    RSS = ""
+[[params.hero_logo_image]]
+image_alt = "Bombardier Logo"
+image_url = "https://morganbye.com/assets/icons/bbd_new.png"
 
-  # Page global config
-  [params.page]
-    hiddenFromHomePage = false
-    hiddenFromSearch = false
-    twemoji = false
-    lightgallery = false
-    ruby = true
-    fraction = true
-    fontawesome = true
-    linkToMarkdown = true
-    rssFullText = false
+[[params.hero_logo_image]]
+image_alt = "Air Canada Logo"
+image_url = "https://morganbye.com/assets/icons/ac.png"
 
-    [params.page.toc]
-      # whether to enable the table of the contents
-      enable = true
-      # whether to keep the static table of the contents in front of the post
-      keepStatic = false
-      # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
+[[params.hero_logo_image]]
+image_alt = "BDC Logo"
+image_url = "https://morganbye.com/assets/icons/bdc.png"
 
-    [params.page.code]
-      # whether to show the copy button of the code block
-      copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 50
+[[params.hero_logo_image]]
+image_alt = "Japanese Airlines Logo"
+image_url = "https://morganbye.com/assets/icons/jal.png"
 
-    [params.page.math]
-      enable = false
-      # default inline delimiter is $ ... $ and \( ... \)
-      inlineLeftDelimiter = ""
-      inlineRightDelimiter = ""
-      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # KaTeX extension copy_tex
-      copyTex = true
-      # KaTeX extension mhchem
-      mhchem = true
-    # Mapbox GL JS config (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
-    [params.page.mapbox]
-      accessToken = ""
-      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
-      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
-      # whether to add NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
-      navigation = true
-      # whether to add GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
-      geolocate = true
-      # whether to add ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
-      scale = true
-      # whether to add FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
+[[params.hero_logo_image]]
+image_alt = "BC Cancer Logo"
+image_url = "https://morganbye.com/assets/icons/bc_cancer.png"
 
-    [params.page.share]
-      enable = true
-      Twitter = true
-      Facebook = true
-      Linkedin = true
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
-      HackerNews = true
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = false
-      Instapaper = false
-      Pocket = false
-      Flipboard = false
-      Weibo = false
-      Blogger = false
-      Baidu = false
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Mix = false
+[[params.hero_logo_image]]
+image_alt = "Loblaws Logo"
+image_url = "https://morganbye.com/assets/icons/lcl.png"
 
-    [params.page.comment]
-      enable = false
+[[params.hero_logo_image]]
+image_alt = "BRP Logo"
+image_url = "https://morganbye.com/assets/icons/brp.png"
 
-      [params.page.comment.disqus]
-        enable = false
-        # Disqus shortname to use Disqus in posts
-        shortname = ""
-      # Gitalk comment config (https://github.com/gitalk/gitalk)
+[[params.hero_logo_image]]
+image_alt = "MDA Space Logo"
+image_url = "https://morganbye.com/assets/icons/mda.png"
 
-      [params.page.comment.facebook]
-        enable = false
-        width = "100%"
-        numPosts = 10
-        appId = ""
-        # automatically adapt the current theme i18n configuration when empty
-        languageCode = ""
 
-    # Page SEO config
-    [params.page.seo]
-      # image URL
-      images = []
+#-------------------------------
+# Slider Featured Settings
+#-------------------------------
 
-  # TypeIt config
-  [params.typeit]
-    # typing speed between each step (measured in milliseconds)
-    speed = 100
-    cursorSpeed = 1000
-    cursorChar = "|"
-    duration = -1
+[params.featured]
+enable = false
+featured_title = "Selected Work"
 
-  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
 
-  # Site SEO config
-  [params.seo]
-    # image URL
-    image = ""
-    # thumbnail URL
-    thumbnailUrl = ""
+#-------------------------------
+# Projects Settings
+#-------------------------------
 
-  # Analytics config
-  [params.analytics]
-    enable = false
-    # Google Analytics
-    [params.analytics.google]
-      id = ""
-      # whether to anonymize IP
-      anonymizeIP = true
+[params.projects]
+enable = false
+projects_title = "Recent Work"
+projects_description = ""
 
-  [params.cookieconsent]
-    enable = false
 
-    [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
-      link = ""
+#-------------------------------
+# Testimonials Section
+#-------------------------------
 
-  [params.compatibility]
-    # whether to use Polyfill.io to be compatible with older browsers
-    polyfill = false
-    # whether to use object-fit-images to be compatible with older browsers
-    objectFit = false
+[params.testimonials]
+enable = true
+testimonials_intro = "Don't take my word for it"
+testimonials_title = "See what others have to say..."
+testimonials_info = ""
+
+[[params.testimonial_item]]
+name = "Leila Sahabejamee"
+image = "https://morganbye.com/assets/testimonials/leila.jpg"
+designation = "Director of Product Management"
+title = "Standout talent"
+content = "Morgan has a unique talent to think outside the box and grasp concepts most find difficult. His knowledge of Google Cloud and aviation big data is excellent. He was always keen and willing to learn new technology with a very positive attitude toward work."
+
+[[params.testimonial_item]]
+name = "Bimla Shelley"
+image = "https://morganbye.com/assets/testimonials/bimla.jpg"
+designation = "Senior Product Owner"
+title = "Incredible knowledge"
+content = "...the moment I see your name in a meeting, I sit back knowing you will come up with solutions that of best interests of us, it's incredible Morgan what you have contributed towards this project."
+
+[[params.testimonial_item]]
+name = "Andrew Couzens"
+image = "https://morganbye.com/assets/testimonials/andrew.jpg"
+designation = "DevOps Engineer"
+title = "Any time, any project"
+content = "Morgan exemplifies the core tenants of DevOps and more... be it his detail oriented delivery, thirst for knowledge, excellent teaching ability, architecture and design capabilities, or the superb documentation he produces... I'd gladly work with him any time, on any project and would highly recommend him to anyone. "
+
+
+#-------------------------------
+# FAQ
+#-------------------------------
+
+[params.faq]
+enable = true
+faq_intro = "Need some answers?"
+faq_title = "Frequently asked questions"
+
+[[params.faq_item]]
+title = "Are the robots going to kill us all?"
+description = ""
+
+[[params.faq_item]]
+title = "But AI is going to steal my job, right?"
+description = ""
+
+[[params.faq_item]]
+title = "When am I going to get my self driving car?"
+description = ""
+
+
+#-------------------------------
+# Blog Section
+#-------------------------------
+
+[params.blog]
+enable = true
+blog_intro = "What’s new?"
+blog_title = "Here's the latest from the blog"
+
+
+#-------------------------------
+# Author Section Settings
+#-------------------------------
+
+[params.author_section]
+enable = true
+author_section_title = "Hi there 👋 ! I'm Morgan, master plumber of data pipelines."
+author_section_description = "When I'm not crafting digital wonders, you can catch me sipping on coffee, cruising around on my bike, running up mountains or enjoying live music"
+author_section_image = "https://pbs.twimg.com/profile_images/1388207423702372354/KutsB7sU_400x400.jpg"
+author_section_image_alt = "Morgan Bye"
+author_section_button_text = 'Reach out, say "hi"'
+author_section_button_link = "/contact"
+
+
+#-------------------------------
+# Footer Settings
+#-------------------------------
+
+[[params.social]]
+icon = "fa-brands fa-linkedin"
+name = "LinkedIn"
+link = "https://linkedin.com/in/morganbye"
+
+[[params.social]]
+icon = "fa-brands fa-github"
+name = "Github"
+link = "https://github.com/morganbye"
+
+[[params.social]]
+icon = "fa-brands fa-x-twitter"
+name = "Twitter"
+link = "https://twitter.com/morganbye"
+
+[[params.social]]
+icon = "fa-brands fa-spotify"
+name = "Spotify"
+link = "https://open.spotify.com/user/morganbye"
+
+[[params.social]]
+icon = "fa-brands fa-lastfm"
+name = "Last FM"
+link = "https://www.last.fm/user/morganbye"
+
+[[params.social]]
+icon = "fa-brands fa-strava"
+name = "Strava"
+link = "https://www.strava.com/athletes/28881016"
+
+
+#-------------------------------
+# Mailing list
+#-------------------------------
+
+# [params.mailchimp]
+# enable = true
+# mailchimp_title = "Stay inspired weekly 📬 Your friendly dose of tips & insights!"
+# mailchimp_description = "Every Sunday, I deliver actionable tips for enhancing productivity, practical life advice, and top-notch insights gathered from various sources, right to your email inbox."
+# mailchimp_identifier = "gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp"
+# mailchimp_input_text = "Your email address"
+
+
+#-------------------------------
+# Contact Settings
+#-------------------------------
+
+[params.contact]
+email = "hello@morganbye.com" # Add your form_id
+
+# NOTE
+# Gerous comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+#-------------------------------
+# Comment Section (Disqus)
+#-------------------------------
+
+[params.disqus]
+enable = true
+disqusShortname = "morganbye-com"
+
+#-------------------------------
+# Misc
+#-------------------------------
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+noClasses = false
