@@ -28,12 +28,12 @@ weight = 20
 
 [[menu.main]]
 name = 'Tech lead'
-pageRef = '/tech/'
+pageRef = '/tags/technology/'
 weight = 30
 
 [[menu.main]]
 name = 'Science'
-pageRef = '/science/'
+pageRef = '/tags/science/'
 weight = 40
 hasChildren = true
 [[menu.main]]
