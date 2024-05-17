@@ -1,6 +1,8 @@
 name: Deploy on push
 
 on: push
+#   schedule:
+#     - cron: "00 1 * * 1" # 1 AM Monday morning 
 
 jobs:
   deploy:
