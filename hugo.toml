@@ -1,8 +1,8 @@
 baseURL = 'https://morganbye.com/'
-title = 'Bringing AI in the real world'
+title = 'Morgan Bye'
 copyright = 'CC BY-SA 4.0'
-languageCode = 'en-ca'
 defaultContentLanguage = 'en'
+languageCode = 'en-ca'
 languageName = 'English'
 theme = 'morganbye-com_theme'
 paginate = 9
@@ -168,9 +168,9 @@ featured_title = "Selected Work"
 #-------------------------------
 
 [params.projects]
-enable = false
-projects_title = "Recent Work"
-projects_description = ""
+enable = true
+projects_title = "Selected projects"
+projects_description = "Here are some of the best projects I've worked on..."
 
 
 #-------------------------------
@@ -326,12 +326,16 @@ category = "categories"
 
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
+    [markup.goldmark.extensions]
+      footnote = true
+      strikethrough = true
+      table = true
 
-[markup.highlight]
-codeFences = true
-guessSyntax = true
-noClasses = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
