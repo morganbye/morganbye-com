@@ -36,11 +36,13 @@ name = 'Science'
 pageRef = '/tags/science/'
 weight = 40
 hasChildren = true
+
 [[menu.main]]
 parent = 'Science'
 name = 'Essays'
 pageRef = '/tags/science/'
 weight = 41
+
 [[menu.main]]
 parent = 'Science'
 name = 'EPR toolbox'
