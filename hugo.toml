@@ -40,7 +40,7 @@ hasChildren = true
 [[menu.main]]
 parent = 'Science'
 name = 'Essays'
-pageRef = '/tags/science/'
+pageRef = '/tags/long-form/'
 weight = 41
 
 [[menu.main]]
@@ -161,8 +161,9 @@ image_url = "https://morganbye.com/assets/icons/mda.png"
 #-------------------------------
 
 [params.featured]
-enable = false
-featured_title = "Best of the blog"
+enable = true
+featured_title = "Top articles"
+featured_description = "Don't know where to start? Here's some of my most popular writing..."
 
 
 #-------------------------------
@@ -182,7 +183,7 @@ projects_description = "Here are some of the best projects I've worked on..."
 [params.testimonials]
 enable = true
 testimonials_intro = "Don't take my word for it"
-testimonials_title = "See what others have to say..."
+testimonials_title = "See what it's like to work with me..."
 testimonials_info = ""
 
 [[params.testimonial_item]]
@@ -239,8 +240,8 @@ description = "Humans are complicated. If we invented driving today - there's NO
 
 [params.blog]
 enable = true
-blog_intro = "What’s new?"
-blog_title = "Here's the latest from the blog"
+blog_intro = "Want the latest from my personal life?"
+blog_title = "Here's the most recent from the blog"
 
 
 #-------------------------------
@@ -249,11 +250,11 @@ blog_title = "Here's the latest from the blog"
 
 [params.author_section]
 enable = true
-author_section_title = "Hi there 👋 ! I'm Morgan, master plumber of data pipelines."
-author_section_description = "When I'm not crafting digital wonders, you can catch me sipping on coffee, cruising around on my bike, running up mountains or enjoying live music"
+author_section_title = "Hi there 👋 ! I'm Morgan, AI pro & certified cat herder."
+author_section_description = "When I'm not crafting AI solutions for the business supply chain, you can catch me sipping coffee, training to try and get my half-marathon under 2 hours or just out on my bike"
 author_section_image = "https://pbs.twimg.com/profile_images/1388207423702372354/KutsB7sU_400x400.jpg"
 author_section_image_alt = "Morgan Bye"
-author_section_button_text = 'Reach out, say "hi"'
+author_section_button_text = 'Reach out and say hello'
 author_section_button_link = "/contact"
 
 
