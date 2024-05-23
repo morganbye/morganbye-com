@@ -309,11 +309,11 @@ link = "https://www.strava.com/athletes/28881016"
 # Contact Settings
 #-------------------------------
 
+# Formspree
 [params.contact]
-email = "hello@morganbye.com" # Add your form_id
+email = "myyrappb"
+recaptcha_key = "6LfFW-YpAAAAAOYY61fTomT3Cb1cy9fCCVINir6J"
 
-# NOTE
-# Gerous comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
 
 #-------------------------------
 # Comment Section (Disqus)
