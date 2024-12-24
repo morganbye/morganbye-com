@@ -5,7 +5,6 @@ defaultContentLanguage = 'en'
 languageCode = 'en-ca'
 languageName = 'English'
 theme = 'morganbye-com_theme'
-paginate = 9
 enableRobotsTXT = true
 
 
@@ -330,6 +329,12 @@ disqusShortname = "morganbye-com"
 [taxonomies]
 tag = "tags"
 category = "categories"
+
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
 
 
 [markup]
