@@ -26,6 +26,24 @@ pageRef = '/posts/'
 weight = 20
 
 [[menu.main]]
+parent = 'Blog'
+name = 'All posts'
+pageRef = '/posts/'
+weight = 21
+
+[[menu.main]]
+parent = 'Blog'
+name = 'Daily blog'
+pageRef = '/tags/blog/'
+weight = 22
+
+[[menu.main]]
+parent = 'Blog'
+name = 'Annual reviews'
+pageRef = '/tags/annual-review/'
+weight = 23
+
+[[menu.main]]
 name = 'Tech lead'
 pageRef = '/tags/technology/'
 weight = 30
