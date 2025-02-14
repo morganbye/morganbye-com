@@ -365,7 +365,13 @@ category = "categories"
       strikethrough = true
       table = true
 
+    [markup.goldmark.parser.attribute]
+      block = true
+
   [markup.highlight]
     codeFences = true
     guessSyntax = true
     noClasses = false
+    lineNos = true
+    style = 'vim'
+    tabWidth = 4
