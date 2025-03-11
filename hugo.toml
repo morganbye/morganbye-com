@@ -44,7 +44,7 @@ pageRef = '/tags/annual-review/'
 weight = 23
 
 [[menu.main]]
-name = 'Tech lead'
+name = 'Tech'
 pageRef = '/tags/technology/'
 weight = 30
 
@@ -375,3 +375,8 @@ category = "categories"
     lineNos = true
     style = 'vim'
     tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
