@@ -1,6 +1,6 @@
 ---
-title: Predictive maintenance at Boeing
-description: Boeing's Flight Data Analytics platform is built to handle recorded flight data from tens of thousands of flights along with other contextual data sources. The first application on this platform was Insight Accelerator, which allows for the building of predicitive maintenance - servicing the aircraft *before* failures occur.
+title: Flight operations at Boeing
+description: Boeing's Flight Data Analytics platform is built to handle recorded flight data from tens of thousands of flights along with other contextual data sources. The first application on this platform was Insight Accelerator, which allows for the building of predictive maintenance - servicing the aircraft *before* failures occur.
 date: 2024-05-17 14:30:00 +0500
 
 image: "https://morganbye.com/assets/img/projects/aircraft_inspection.webp"

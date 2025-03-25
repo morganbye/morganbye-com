@@ -1,5 +1,5 @@
 ---
-title: "Pricing Optimization for a National Grocery Retailer"
+title: "Pricing optimization for a national supermarket"
 description: "Promotions represent nearly 50% of unit sales and 40% of revenue in grocery retail, yet many chains rely on repeating the same promotions year after year — often applying identical prices across vastly different stores."
 date: 2025-03-25T15:30:00-04:00
 publishDate: 2025-03-25T15:30:00-04:00
@@ -65,11 +65,13 @@ Our hybrid approach combined machine learning, mathematical optimization, and si
 
 ### 🛠 **Tech & Tools**
 
+Tech stack:
 - Google Cloud BigQuery
 - Google Cloud Vertex AI
 - Google Cloud Composer (Apache Airflow)
 - Google Cloud DataProc (Apache Spark)
 
+Science stack:
 - Mixed-Integer Programming
 - Demand Forecasting
 - Hierarchical Clustering
