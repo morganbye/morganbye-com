@@ -233,27 +233,41 @@ projects_description = "Here are some of the best projects I've worked on..."
 [params.testimonials]
 enable = true
 testimonials_intro = "Don't take my word for it"
-testimonials_title = "See what it's like to work with me..."
+testimonials_title = "This is what others say about working with me..."
 testimonials_info = ""
 
 [[params.testimonial_item]]
 name = "Leila Sahabejamee"
 image = "https://morganbye.com/assets/testimonials/leila.jpg"
-designation = "Director of Product Management"
+designation = "Director of Product Management, Microsoft"
 title = "Standout talent"
 content = "Morgan has a unique talent to think outside the box and grasp concepts most find difficult. His knowledge of Google Cloud and aviation big data is excellent. He was always keen and willing to learn new technology with a very positive attitude toward work."
 
 [[params.testimonial_item]]
+name = "Aditya Singh"
+image = "https://morganbye.com/assets/testimonials/aditya.jpg"
+designation = "Director of Data Science, Loblaw"
+title = "Fantastic leader"
+content = "Morgan is a fantastic technology leader. He brings a deep engineering expertise and focus on delivering impactful solutions - not just code. He's not afraid to ask difficult questions and often first to get his hands dirty."
+
+[[params.testimonial_item]]
 name = "Bimla Shelley"
 image = "https://morganbye.com/assets/testimonials/bimla.jpg"
-designation = "Senior Product Owner"
+designation = "Senior Product Owner, Royal Bank"
 title = "Incredible knowledge"
 content = "...the moment I see your name in a meeting, I sit back knowing you will come up with solutions that of best interests of us, it's incredible Morgan what you have contributed towards this project."
 
 [[params.testimonial_item]]
+name = "Jithu Puzhakkara"
+image = "https://morganbye.com/assets/testimonials/jithu.jpg"
+designation = "ML Engineer, EA Games"
+title = "Push for what's right"
+content = "Morgan's a team player who's brutally honest with his opinions and never hesitiates to push for what's right. He's a masterful communicator, who always stays at the forefront of software engineering trends."
+
+[[params.testimonial_item]]
 name = "Andrew Couzens"
 image = "https://morganbye.com/assets/testimonials/andrew.jpg"
-designation = "DevOps Engineer"
+designation = "DevOps Engineer, Boeing"
 title = "Any time, any project"
 content = "Morgan exemplifies the core tenants of DevOps and more... be it his detail oriented delivery, thirst for knowledge, excellent teaching ability, architecture and design capabilities, or the superb documentation he produces... I'd gladly work with him any time, on any project and would highly recommend him to anyone. "
 
