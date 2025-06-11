@@ -142,6 +142,10 @@ image_alt = "Boeing Logo"
 image_url = "https://morganbye.com/assets/icons/boeing.png"
 
 [[params.hero_logo_image]]
+image_alt = "Unilever Logo"
+image_url = "https://morganbye.com/assets/icons/unilever.png"
+
+[[params.hero_logo_image]]
 image_alt = "Bombardier Logo"
 image_url = "https://morganbye.com/assets/icons/bbd_new.png"
 
