@@ -22,55 +22,83 @@ pageRef = '/'
 weight = 10
 
 [[menu.main]]
+name = 'Satire'
+pageRef = '/tags/satire/'
+weight = 20
+
+[[menu.main]]
 name = 'Blog'
 pageRef = '/posts/'
-weight = 20
+weight = 30
 
 [[menu.main]]
 parent = 'Blog'
 name = 'All posts'
 pageRef = '/posts/'
-weight = 21
+weight = 31
+
+[[menu.main]]
+parent = 'Blog'
+name = 'Satire'
+pageRef = '/tags/satire/'
+weight = 32
 
 [[menu.main]]
 parent = 'Blog'
 name = 'Daily blog'
 pageRef = '/tags/blog/'
-weight = 22
+weight = 33
 
 [[menu.main]]
 parent = 'Blog'
 name = 'Annual reviews'
 pageRef = '/tags/annual-review/'
-weight = 23
+weight = 34
 
 [[menu.main]]
 name = 'Tech'
 pageRef = '/tags/technology/'
-weight = 30
+weight = 40
+
+[[menu.main]]
+parent = 'Tech'
+name = 'Posts'
+pageRef = '/tags/technology/'
+weight = 41
+
+[[menu.main]]
+parent = 'Tech'
+name = 'Projects'
+pageRef = '/projects/'
+weight = 41
+
+[[menu.main]]
+name = 'Essays'
+pageRef = '/tags/long-form/'
+weight = 50
 
 [[menu.main]]
 name = 'Science'
 pageRef = '/tags/science/'
-weight = 40
+weight = 60
 hasChildren = true
 
 [[menu.main]]
 parent = 'Science'
 name = 'Essays'
 pageRef = '/tags/long-form/'
-weight = 41
+weight = 61
 
 [[menu.main]]
 parent = 'Science'
 name = 'EPR toolbox'
 pageRef = '/tags/eprtoolbox/'
-weight = 42
+weight = 62
 
 [[menu.main]]
 name = 'About'
 pageRef = '/about.html'
-weight = 50
+weight = 90
 
 
 # Footer Menu
