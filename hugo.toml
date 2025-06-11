@@ -6,6 +6,7 @@ languageCode = 'en-ca'
 languageName = 'English'
 theme = 'morganbye-com_theme'
 enableRobotsTXT = true
+googleAnalytics = "G-ML1SPV29L6"
 
 
 #-------------------------------
