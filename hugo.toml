@@ -45,6 +45,12 @@ weight = 32
 
 [[menu.main]]
 parent = 'Blog'
+name = 'Reflection'
+pageRef = '/tags/reflection/'
+weight = 33
+
+[[menu.main]]
+parent = 'Blog'
 name = 'Essays'
 pageRef = '/tags/long-form/'
 weight = 34
