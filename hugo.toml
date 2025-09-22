@@ -316,7 +316,7 @@ description = "Humans are complicated. If we invented driving today - there's NO
 
 [params.blog]
 enable = true
-blog_intro = "Want the latest from my personal life?"
+blog_intro = "Want the latest of my writing?"
 blog_title = "Here's the most recent from the blog"
 
 
