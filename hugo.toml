@@ -142,7 +142,7 @@ weight = 4
 [params.cta_button]
 enable = true
 cta_button_link = "/contact/"
-cta_button_text = "Get in touch"
+cta_button_text = "Let's Talk Strategy"
 
 
 #-------------------------------
@@ -171,8 +171,8 @@ author_avatar = "https://pbs.twimg.com/profile_images/1388207423702372354/KutsB7
 
 [params.hero]
 enable = true
-hero_title = "Bringing AI into the real world..."
-hero_description = "Leveraging my expertise, I'm here to collaborate with you on bringing custom AI solutuions into the real world. Together, let's optimize this planet!"
+hero_title = "Engineering leadership for the human scale."
+hero_description = "Specializing in scaling technical organizations across continents and petabytes. I align engineering culture with business ROI, ensuring your people evolve as fast as your tech stack."
 
 [params.hero_logos]
 enable = true
