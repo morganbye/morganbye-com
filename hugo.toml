@@ -149,7 +149,17 @@ image_url = "https://morganbye.com/assets/icons/mda.png"
 
 
 #-------------------------------
-# Slider Featured Settings
+# Recent posts / blog
+#-------------------------------
+
+[params.blog]
+enable = true
+blog_intro = "PERSPECTIVES ON TECH & CULTURE"
+blog_title = "Philosophy & Practice"
+
+
+#-------------------------------
+# Featured Settings
 #-------------------------------
 
 [params.featured]
@@ -271,15 +281,6 @@ Technical debt isn't a "bad thing" to be avoided; it's a set of historical decis
 - **The 70/20/10 Rule:** I typically aim to dedicate 70% of resources to new features, 20% to infrastructure/debt, and 10% to R&D. This ensures we never stop innovating, but we never stop fortifying either.
 """
 
-
-#-------------------------------
-# Blog Section
-#-------------------------------
-
-[params.blog]
-enable = true
-blog_intro = "Want the latest of my writing?"
-blog_title = "Here's the most recent from the blog"
 
 
 #-------------------------------
