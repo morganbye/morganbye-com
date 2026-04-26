@@ -101,6 +101,7 @@ author_avatar = "https://morganbye.com/assets/img/2026/2026_headshot_suit.webp"
 [params.hero]
 enable = true
 hero_title = "Engineering leadership for the human scale."
+hero_summary = "15+ Years Experience | Petabyte-Scale Data | 3 Continents"
 hero_description = "Specializing in scaling technical organizations across continents and petabytes. I align engineering culture with business ROI, ensuring your people evolve as fast as your tech stack."
 
 [params.hero_logos]
