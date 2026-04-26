@@ -290,24 +290,51 @@ content = "Morgan exemplifies the core tenants of DevOps and more... be it his d
 
 [params.faq]
 enable = true
-faq_intro = "Need some answers?"
-faq_title = "Frequently asked questions"
+faq_intro = "LEADERSHIP, SCALE, AND THE HUMAN ELEMENT"
+faq_title = "Principles & Perspectives"
 
 [[params.faq_item]]
-title = "What distinguishes you from other developers?"
-description = "I've built data pipelines across 3 continents at petabyte scales, for over 15 years. But the data doesn't matter if we don't solve the human problems first - an AI solution that nobody uses is worthless."
+title = "How do you define successful engineering leadership?"
+description = """**The Philosophy**
+
+Many view technical leadership as being the "smartest architect in the room." I see it as the opposite. My job is to build a room where I don't have to be the smartest person because the systems, culture, and communication are so robust that the team can out-innovate me.
+
+**The Strategy**
+
+- **Alignment:** Does every engineer understand how their sprint task impacts the company's bottom line?
+- **Velocity vs. Stability:** We aren't just "shipping fast"; we are building a predictable, repeatable engine that doesn't collapse under its own weight at the next order of magnitude.
+- **The Human Growth Curve:** Success is when the engineering team's capability evolves faster than the product's complexity. If the team feels stagnant, the tech stack will soon follow.
+"""
 
 [[params.faq_item]]
-title = "Are the robots going to kill us all?"
-description = "Not any time soon. At least not in the way that you've got imagined thanks to the Terminator movies. Sure somebody with a DARPA grant is always going to strap a knife/gun/flamethrower on the side of a robot - but just like in Dr.Who - right now, that robot will struggle to even get out of the room, let alone up some stairs."
+title = "What is your approach to scaling technical organizations?"
+description = """**The Philosophy**
+
+Scaling isn't just "hiring more people" - that's often how you slow down. Scaling is about moving from Individual Heroics to Organizational Systems.
+
+**The Strategy**
+
+- **The 3-Continent Perspective:** Having managed global teams, I focus on "High-Signal Communication." As you grow, the cost of a meeting triples. I implement "Asynchronous-First" cultures that protect deep-work time while ensuring no one is blocked by a timezone.
+
+- **Modular Autonomy:** I advocate for breaking down monolithic teams into autonomous units with clear ownership. This reduces the "communication tax" and allows us to scale the headcount without scaling the bureaucracy.
+
+- **Automation as Infrastructure:** At petabyte scale, manual intervention is a failure. I treat the developer experience (CI/CD, observability, self-service infra) as a first-class product to keep the "path to production" frictionless.
+"""
 
 [[params.faq_item]]
-title = "But AI is going to steal my job, right?"
-description = "A year ago, the whole world was convinced that AI was going to steal their job. Now, the reality is that most people are thinking 'I wish this POC at work would go a bit faster to scan these PDFs'."
+title = "How do you balance high-growth velocity with technical stability?"
+description = """**The Philosophy**
 
-[[params.faq_item]]
-title = "When am I going to get my self-driving car?"
-description = "Humans are complicated. If we invented driving today - there's NO WAY IN HELL we'd let humans do it. They get distracted. They text their friends. They drink. They make mistakes. But the reality is, all of our streets, cities (and even legal systems) have been built around these limitations. It would be surprisingly easy to build self-driving cars if there were no humans on the road. But today no one wants to take liability. If a self-driving company kills someone, who's responsible? The manufacturer? The insurance company? The software developer?"
+Technical debt isn't a "bad thing" to be avoided; it's a set of historical decisions that no longer serve you. Like any loan, leverage can accelerate growth when investments payoff. But if velocity and returns are slowing you need a payment plan before the interest kills you.
+
+**The Strategy**
+
+- **The ROI Filter:** I don't refactor for the sake of "clean code." I don't refactor a micro-service with no users. I refactor when the pain on that debt - measured in bugs, downtime, or developer frustration - starts to exceed the cost of the fix.
+
+- **Zero-Downtime Culture:** Especially at scale, stability is a feature. I implement "Guardrail Engineering" where the system is designed to fail gracefully, ensuring that a Series B growth spike becomes a success story rather than a post-mortem.
+
+- **The 70/20/10 Rule:** I typically aim to dedicate 70% of resources to new features, 20% to infrastructure/debt, and 10% to R&D. This ensures we never stop innovating, but we never stop fortifying either.
+"""
 
 
 #-------------------------------
