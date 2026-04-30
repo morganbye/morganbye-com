@@ -58,11 +58,6 @@ name = "Posts"
 url = "/posts/"
 weight = 3
 
-[[menu.footer]]
-name = "About Me"
-url = "/about/"
-weight = 4
-
 
 #-------------------------------
 # Call to action button
@@ -149,44 +144,6 @@ image_url = "https://morganbye.com/assets/icons/mda.png"
 
 
 #-------------------------------
-# Recent posts / blog
-#-------------------------------
-
-[params.blog]
-enable = true
-blog_intro = "PERSPECTIVES ON TECH & CULTURE"
-blog_title = "Philosophy & Practice"
-
-
-#-------------------------------
-# Featured Settings
-#-------------------------------
-
-[params.featured]
-enable = true
-featured_title = "Top articles"
-featured_description = "Don't know where to start? Here's some of my most popular writing..."
-
-[params.reflections_featured]
-enable = true
-title = "Featured reflections"
-description = "Selected essays on reflection, ordered by the posts you want people to see first."
-section = "posts"
-tag = "reflection"
-limit = 6
-
-
-#-------------------------------
-# Projects Settings
-#-------------------------------
-
-[params.projects]
-enable = true
-projects_title = "Selected projects"
-projects_description = "Here are some of the best projects I've worked on..."
-
-
-#-------------------------------
 # Testimonials Section
 #-------------------------------
 
@@ -235,6 +192,68 @@ company = "Boeing"
 image = "https://morganbye.com/assets/testimonials/andrew.jpg"
 title = "Any time, any project"
 content = "Morgan exemplifies the core tenants of DevOps and more... be it his detail oriented delivery, thirst for knowledge, excellent teaching ability, architecture and design capabilities, or the **superb documentation** he produces... I'd gladly work with him any time, on any project and would highly recommend him to anyone."
+
+
+#-------------------------------
+# Featured Settings
+#-------------------------------
+
+[params.featured]
+enable = false
+featured_title = "Top articles"
+featured_description = "Don't know where to start? Here's some of my most popular writing..."
+
+#-------------------------------
+# Strategic Pillars
+#-------------------------------
+
+[params.strategic_insights]
+enable = true
+title = "Strategic Pillars"
+description = "High-conviction views on the leadership, hiring, and judgment questions shaping modern engineering organizations."
+
+[[params.strategic_insights.pillars]]
+column = 1
+title = "Culture & Leadership"
+
+[[params.strategic_insights.pillars]]
+column = 2
+title = "Strategy & Scale"
+
+[[params.strategic_insights.pillars]]
+column = 3
+title = "The AI Frontier"
+
+#-------------------------------
+# Reflections highlight
+#-------------------------------
+
+[params.reflections_featured]
+enable = false
+title = "Featured writing"
+description = "Selected essays on reflection, ordered by the posts you want people to see first."
+section = "posts"
+tag = "reflection"
+limit = 6
+
+#-------------------------------
+# Recent posts / blog
+#-------------------------------
+
+[params.blog]
+enable = true
+blog_intro = "PERSPECTIVES ON TECH & CULTURE"
+blog_title = "Philosophy & Practice"
+
+
+#-------------------------------
+# Projects Settings
+#-------------------------------
+
+[params.projects]
+enable = true
+projects_title = "Strategic outcomes"
+projects_description = "From aviation to healthcare: building technical foundations that solve high-stakes business challenges"
 
 
 #-------------------------------
