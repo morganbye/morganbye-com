@@ -167,6 +167,14 @@ enable = true
 featured_title = "Top articles"
 featured_description = "Don't know where to start? Here's some of my most popular writing..."
 
+[params.reflections_featured]
+enable = true
+title = "Featured reflections"
+description = "Selected essays on reflection, ordered by the posts you want people to see first."
+section = "posts"
+tag = "reflection"
+limit = 6
+
 
 #-------------------------------
 # Projects Settings
