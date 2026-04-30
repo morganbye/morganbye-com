@@ -1,6 +1,6 @@
 ---
 title: "Precision Pricing at Scale: AI-Driven Margin Optimization for National Retail"
-description: "Engineering a store-level price optimization engine for a major Canadian grocer, shifting from a "one-size-fits-all" promotion model to a localized, AI-assisted strategy across 1,000+ locations."
+description: "Engineering a store-level price optimization engine for a major Canadian grocer, shifting from a \"one-size-fits-all\" promotion model to a localized, AI-assisted strategy across 1,000+ locations."
 date: 2025-03-25T15:30:00-04:00
 publishDate: 2025-03-25T15:30:00-04:00
 
