@@ -2,7 +2,7 @@ baseURL = 'https://morganbye.com/'
 title = 'Morgan Bye'
 copyright = 'CC BY-SA 4.0'
 defaultContentLanguage = 'en'
-languageCode = 'en-ca'
+locale = 'en-ca'
 languageName = 'English'
 theme = 'morganbye-com_theme'
 enableRobotsTXT = true
@@ -316,12 +316,12 @@ Technical debt isn't a "bad thing" to be avoided; it's a set of historical decis
 
 [params.author_section]
 enable = false
-# author_section_title = "Hi there 👋 ! I'm Morgan, AI pro & certified cat herder."
-# author_section_description = "When I'm not crafting AI solutions for the business supply chain, you can catch me sipping coffee, training to try and get my half-marathon under 2 hours or just out on my bike"
-# author_section_image = "https://morganbye.com/assets/img/2026/2026_headshot_suit.webp"
-# author_section_image_alt = "Morgan Bye"
-# author_section_button_text = 'Reach out and say hello'
-# author_section_button_link = "/contact"
+author_section_title = "Morgan Bye, engineering leader"
+author_section_description = ""
+author_section_image = "https://morganbye.com/assets/img/avatars/style/14.webp"
+author_section_image_alt = "Morgan Bye"
+author_section_button_text = "Let's talk strategy"
+author_section_button_link = "/contact"
 
 
 #-------------------------------
