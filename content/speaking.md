@@ -1,6 +1,7 @@
 ---
 title: "Speaking & Strategic Insights"
 description: "Bridging the gap between high-scale technology and human-centric leadership."
+image: https://morganbye.com/assets/img/avatars/talks/02.webp
 ---
 
 I am available for keynote speaking, panel moderation, and podcast guest appearances. My talks focus on the intersection of **petabyte-scale engineering**, **global team leadership**, and the **strategic evolution of engineering culture**. 
@@ -20,7 +21,7 @@ I thrive on translating complex technical challenges into actionable business st
 
 ## Past Appearances & Media (Coming Soon)
 
-_I am currently migrating my media archive and past conference recordings to this new site. In the meantime, you can find my latest long-form writing on the [Philosophy/Blog](https://morganbye.com/posts/) page._
+_I am currently migrating my media archive and past conference recordings to this new site. In the meantime, you can find my latest long-form writing on the [Philosophy Archive](https://morganbye.com/posts/) page._
 
 ---
 
