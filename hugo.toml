@@ -1,6 +1,6 @@
 baseURL = 'https://morganbye.com/'
 title = 'Morgan Bye'
-copyright = 'CC BY-SA 4.0'
+copyright = "CC BY-SA 4.0"
 defaultContentLanguage = 'en'
 locale = 'en-ca'
 languageName = 'English'
